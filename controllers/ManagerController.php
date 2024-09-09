@@ -76,7 +76,7 @@ class ManagerController extends Controller {
 				//if exists loop through files and add them to iframe mode
 				foreach ($aCssFiles AS $cssFile) {
 					//registrate file
-					$this->view->registerCssFile($cssFile, ['depends' => 'yii\bootstrap\BootstrapAsset']);
+					$this->view->registerCssFile($cssFile, ['depends' => 'yii\bootstrap4\BootstrapAsset']);
 				}
 			}
 		}
