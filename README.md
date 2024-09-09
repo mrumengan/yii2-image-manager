@@ -1,6 +1,5 @@
-!!! Sorry, the module is no longer maintained by me anymore !!!
 -
-!!! Feel free to further develop the module !!!
+!!! Forked !!!
 -
 
 Image manager for Yii2
@@ -15,12 +14,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 * Either run
 
 ```
-php composer.phar require "noam148/yii2-image-manager" "*" 
+php composer.phar require "[https://github.com/mrumengan/yii2-image-manager]" "*" 
 ```
 or add
 
 ```json
-"noam148/yii2-image-manager" : "*"
+"mrumengan/yii2-image-manager" : "*"
 ```
 
 to the require section of your application's `composer.json` file.
