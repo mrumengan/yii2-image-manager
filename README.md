@@ -1,4 +1,3 @@
--
 !!! Forked !!!
 -
 
@@ -14,7 +13,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 * Either run
 
 ```
-php composer.phar require "[https://github.com/mrumengan/yii2-image-manager]" "*" 
+php composer.phar require "mrumengan/yii2-image-manager" "*" 
 ```
 or add
 
@@ -34,7 +33,7 @@ yii migrate --migrationPath=@noam148/imagemanager/migrations
 ```php
 'components' => [
     'imagemanager' => [
-		'class' => 'noam148\imagemanager\components\ImageManagerGetPath',
+		'class' => 'mrumengan\imagemanager\components\ImageManagerGetPath',
 		//set media path (outside the web folder is possible)
 		'mediaPath' => '/path/where/to/store/images/media/imagemanager',
         //path relative web folder. In case of multiple environments (frontend, backend) add more paths 
@@ -53,7 +52,7 @@ and in `modules` section, for example:
 ```php
 'modules' => [
 	'imagemanager' => [
-		'class' => 'noam148\imagemanager\Module',
+		'class' => 'mrumengan\imagemanager\Module',
 		//set accces rules ()
 		'canUploadImage' => true,
 		'canRemoveImage' => function(){
