@@ -17,17 +17,17 @@
     "authors": [
         {
             "name": "mrumengan",
-            "homepage": "https://github.com/noam148/"
+            "homepage": "https://github.com/mrumengan/"
         }
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "noam148/yii2-image-resize": "*",
+        "mrumengan/yii2-image-resize": "*",
         "kartik-v/yii2-widget-fileinput": "@dev"
     },
     "autoload": {
         "psr-4": {
-            "noam148\\imagemanager\\": ""
+            "mrumengan\\imagemanager\\": ""
         }
     }
 }
