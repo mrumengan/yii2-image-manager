@@ -25,7 +25,7 @@ to the require section of your application's `composer.json` file.
 
 * Run the migrate to create the ImageManager table
 ```
-yii migrate --migrationPath=@noam148/imagemanager/migrations
+yii migrate --migrationPath=@mrumengan/imagemanager/migrations
 ```
 
 * Add a new component in `components` section of your application's configuration file, for example:
@@ -81,7 +81,7 @@ http://www.example.com/imagemanager
 To load the image picker see below (make sure you have a field in you table where the module can store 'id' of the ImageManager table):
 
 ```php
-echo $form->field($model, 'ImageManager_id_avatar')->widget(\noam148\imagemanager\components\ImageManagerInputWidget::className(), [
+echo $form->field($model, 'ImageManager_id_avatar')->widget(\mrumengan\imagemanager\components\ImageManagerInputWidget::className(), [
 	'aspectRatio' => (16/9), //set the aspect ratio
     'cropViewMode' => 1, //crop mode, option info: https://github.com/fengyuanchen/cropper/#viewmode
 	'showPreview' => true, //false to hide the preview
