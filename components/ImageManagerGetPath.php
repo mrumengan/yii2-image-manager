@@ -95,7 +95,7 @@ class ImageManagerGetPath extends Component {
 				$return = \Yii::$app->imageresize->getUrl($sImageFilePath, $width, $height, $thumbnailMode, null, $mImageManager->fileName);
 			} else {
                 // This one used for image already in folder and impoted manual to database
-                $sImageFilePath = $sMediaPath . '/' . $mImageManager->fileHash . '.' . $sFileExtension;
+                $sImageFilePath = $sMediaPath . '/' . $mImageManager->fileHash;
     			if (file_exists($sImageFilePath)) {
                     $return = \Yii::$app->imageresize->getUrl($sImageFilePath, $width, $height, $thumbnailMode, null, $mImageManager->fileName);
                 } else {
